@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recall - Record your thoughts</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1 class="taskify-title">recall</h1>
+    <div class="container" style="display: none">
+      <div class="input-container">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="What did you do today?"
+        />
+        <button class="mic-btn" id="micButton">
+          <i class="fas fa-microphone"></i>
+        </button>
+        <button class="add-btn"><span>+</span></button>
+      </div>
+      <div class="button-group">
+        <button class="clear-btn">Clear All</button>
+        <button class="flag-btn">Flag</button>
+        <select id="dateFilter" class="date-filter">
+          <option value="">Select Date</option>
+        </select>
+      </div>
+      <div class="separator"></div>
+      <ul id="taskList"></ul>
+    </div>
+    <div id="confirmDialog" class="confirm-dialog">
+      <p>Are you sure you want to clear all entries?</p>
+      <button id="confirmYes" class="confirm-btn">Yes</button>
+      <button id="confirmNo" class="confirm-btn">No</button>
+    </div>
+    <script src="script.js"></script>
+    <div class="copyright">© 2024 Samuel Stern</div>
+  </body>
+</html>
